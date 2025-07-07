@@ -1,0 +1,56 @@
+# Archivos y directorios a ignorar durante el build de Docker
+
+# Git
+.git
+.gitignore
+
+# Documentación
+README.md
+LICENSE
+*.md
+
+# Archivos de configuración local
+.env
+.env.local
+.env.*.local
+
+# Directorios de build y cache
+dist/
+build/
+.cache/
+
+# Archivos de desarrollo
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+temp/
+
+# Archivos de prueba
+*_test.go
+test/
+tests/
+
+# Binarios compilados localmente
+mcp-link
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Docker (excluir entrypoint.sh de esta lista)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Assets que no son necesarios para runtime
+assets/
+examples/
